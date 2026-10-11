@@ -1,0 +1,34 @@
+{
+  "upload_type": "software",
+  "title": "When Sample-Splitting Choices Matter in TMLE and AIPW: Cross-Fitting, Targeting, and Repetition (companion code and saved results)",
+  "description": "<p>R code, saved results and figures for the paper <em>When Sample-Splitting Choices Matter in TMLE and AIPW: Cross-Fitting, Targeting, and Repetition</em>. Every estimator is built from one influence function on a shared nuisance-and-fold engine, so any difference between two estimators is a design choice rather than the implementation.</p><p>The release contains the estimator engine and variant definitions, the two applied analyses (right heart catheterization; LaLonde/NSW), the Slurm harness of the known-truth simulation, the aggregated simulation output, and the saved applied-analysis results. <code>run_saved.R</code> reproduces Table 3, Figure 1, Supplementary Figures S1, S2, S4 and S5 and Supplementary Tables S1-S7 and S9-S11 from the saved results, without data or model fitting. On that route the sample sizes and overlap shares of Supplementary Table S11 panel B, including the 185 treated men and the 0.49 upper bound on the CPS propensity estimates, are transcribed from the paper as printed, because the per-unit propensity file they come from is not included. <code>run_all.R</code> downloads the benchmark data and refits the applied analyses. The benchmark data are not redistributed, and no file holding unit-level data or a per-unit vector of derived values is included. The saved applied results are estimates, standard errors, intervals, counts and summary statistics of the fitted propensity scores, including the minimum and maximum overall and within each treatment arm. See the README.</p>",
+  "creators": [
+    {
+      "name": "Karim, Mohammad Ehsanul",
+      "orcid": "0000-0002-0346-2871"
+    }
+  ],
+  "license": "MIT",
+  "notes": "Licences: the authors' code is MIT (LICENSE); the figures (images/) and saved results (output/) are CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). R/dgm.R adapts the statin data-generating mechanism from Paul Zivich's publications-code (release v2026.07.20, https://doi.org/10.5281/zenodo.21456065), whose release record declares CC BY 4.0; that upstream material remains under CC BY 4.0 and the authors' changes are MIT (THIRD_PARTY_NOTICES.md). These licences cover only the authors' own rights and do not cover the benchmark data, which are not included and remain under their providers' terms (README, Data).",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21456065",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "doi"
+    }
+  ],
+  "keywords": [
+    "targeted maximum likelihood estimation",
+    "TMLE",
+    "cross-fitting",
+    "cross-validated TMLE",
+    "double cross-fitting",
+    "sample splitting",
+    "causal inference",
+    "average treatment effect",
+    "Super Learner",
+    "simulation study",
+    "R"
+  ]
+}

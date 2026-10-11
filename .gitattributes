@@ -1,0 +1,5 @@
+# Force LF line endings for all text (shell/slurm scripts must stay LF for the cluster).
+* text=auto eol=lf
+*.rds binary
+*.pdf binary
+*.dta binary

@@ -1,0 +1,51 @@
+# R session
+.Rhistory
+.RData
+.Rproj.user/
+
+# Regenerable outputs: only the canonical simulation map + report are committed;
+# run_all.R and the cluster harness regenerate everything else into output/.
+output/*
+!output/compass_maps.rds
+!output/compass_report.txt
+# packaged saved inputs so Supplement Tables S5/S6 reproduce without the cluster
+# shards (historical file names: s4_ feeds Table S5, s5_ feeds Table S6)
+!output/s4_repetition_input.rds
+!output/s5_diagnostics_input.rds
+!output/S4_S5_PROVENANCE.md
+!output/truths.rds
+!output/TRUTHS_PROVENANCE.md
+# saved applied-analysis results, so Tables S10-S11, Figure 1 and Figures S1-S2
+# reproduce without the benchmark data (reviewed: no unit-level data and no per-unit
+# vector; summary results only; see output/APPLIED_PROVENANCE.md, Unit-level content).
+# output/lalonde_overlap.rds holds a per-unit propensity vector and must NEVER be
+# negated here.
+!output/rhc_factorial_fast.rds
+!output/rhc_factorial_rf.rds
+!output/rhc_overlap_diag.rds
+!output/lalonde_estimates.rds
+!output/APPLIED_PROVENANCE.md
+# record of the clean-clone run_saved.R check
+!output/CLEAN_CLONE_CHECK.md
+
+# Benchmark data: fetched by data-raw/get_data.R; never committed (see README, Data).
+# Directory-wide so a newly fetched file cannot be committed by `git add .`. Never add a
+# negation for any file holding unit-level data or a per-unit vector of derived values.
+/data/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.blg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Third-party reference code (Zivich & Breskin) is NOT redistributed; 03_verify_engine.R
+# reads it from here only if the user saves it locally.
+data/reference/

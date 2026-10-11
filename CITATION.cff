@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Reproduction code for: When Sample-Splitting Choices Matter in TMLE and AIPW: Cross-Fitting, Targeting, and Repetition"
+authors:
+  - family-names: Karim
+    given-names: Mohammad Ehsanul
+    orcid: "https://orcid.org/0000-0002-0346-2871"
+repository-code: "https://github.com/ehsanx/TMLE-variants-reproduction"
+preferred-citation:
+  type: unpublished
+  title: "When Sample-Splitting Choices Matter in TMLE and AIPW: Cross-Fitting, Targeting, and Repetition"
+  authors:
+    - family-names: Karim
+      given-names: Mohammad Ehsanul
+      orcid: "https://orcid.org/0000-0002-0346-2871"
+      affiliation: "School of Population and Public Health, University of British Columbia"
+    - family-names: Fu
+      given-names: Rainie
+      affiliation: "School of Population and Public Health, University of British Columbia"
+  year: 2026
+  notes: "Manuscript; arXiv identifier to be added"
+references:
+  - type: software
+    title: "pzivich/publications-code"
+    version: "v2026.07.20"
+    authors:
+      - family-names: Zivich
+        given-names: Paul
+    doi: "10.5281/zenodo.21456065"
+    license: CC-BY-4.0
+    notes: "R/dgm.R adapts DoubleCrossFit/Python/dgm.py from this release (licence as declared in the Zenodo record); see THIRD_PARTY_NOTICES.md."
